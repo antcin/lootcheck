@@ -9,9 +9,8 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe('Loot', () => {
   const mockFetchBitcoin = jest.fn()
-  const props = { balance: 10, bitcoin: {} }
+  let props = { balance: 10, bitcoin: {}, fetchBitcoin: mockFetchBitcoin };
   let loot = shallow(<Loot {...props} />);
-
 
   it('renders properly', () => {
     expect(loot).toMatchSnapshot();
@@ -23,8 +22,9 @@ describe('Loot', () => {
       loot = mount(<Loot {...props} />)
     });
 
+
     it('dispatches the `fetchBitcoin()` method it receives from props', () => {
-      expect(mockFetchBitcoin).toHaveBeenCalled()
-    })
+      expect(mockFetchBitcoin).toHaveBeenCalled();
+    });
   });
 });
