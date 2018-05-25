@@ -4,7 +4,9 @@ exports[`Wallet renders properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Wallet />,
+  Symbol(enzyme.__unrendered__): <Wallet
+    balance={20}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,6 +21,7 @@ ShallowWrapper {
     "props": Object {
       "children": <h3>
         Wallet balance: 
+        20
 </h3>,
     },
     "ref": null,
@@ -29,13 +32,13 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           "Wallet balance: ",
-          undefined,
+          20,
         ],
       },
       "ref": null,
       "rendered": Array [
         "Wallet balance: ",
-        undefined,
+        20,
       ],
       "type": "h3",
     },
@@ -49,6 +52,7 @@ ShallowWrapper {
       "props": Object {
         "children": <h3>
           Wallet balance: 
+          20
 </h3>,
       },
       "ref": null,
@@ -59,13 +63,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "Wallet balance: ",
-            undefined,
+            20,
           ],
         },
         "ref": null,
         "rendered": Array [
           "Wallet balance: ",
-          undefined,
+          20,
         ],
         "type": "h3",
       },
