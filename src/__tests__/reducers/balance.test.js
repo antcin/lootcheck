@@ -1,6 +1,6 @@
-import balanceReducer from './balance';
-import balanceReducer2 from './balance';
-import * as constants from '../actions/constants';
+import balanceReducer from '../../reducers/balance';
+import balanceReducer2 from '../../reducers/balance';
+import * as constants from '../../actions/constants';
 
 describe('balanceReducer', () => {
   describe('when initialising', () => {

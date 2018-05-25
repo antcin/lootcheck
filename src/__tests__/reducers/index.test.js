@@ -1,4 +1,4 @@
-import rootReducer from './index';
+import rootReducer from '../../reducers/index';
 
 describe('rootReducer', () => {
   it('initialises the default state', () => {

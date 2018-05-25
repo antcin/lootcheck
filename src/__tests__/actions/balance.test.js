@@ -1,5 +1,5 @@
-import * as constants from './constants';
-import * as actions from './balance';
+import * as constants from '../../actions/constants';
+import * as actions from '../../actions/balance';
 
 it('creates an action to set the balance', () => {
   const balance = 0;
