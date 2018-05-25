@@ -7,7 +7,6 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Loot
     balance={10}
     bitcoin={Object {}}
-    fetchBitcoin={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -21,10 +20,16 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "Bitcoin balance:",
+      "children": Array [
+        "Bitcoin balance: ",
+        "",
+      ],
     },
     "ref": null,
-    "rendered": "Bitcoin balance:",
+    "rendered": Array [
+      "Bitcoin balance: ",
+      "",
+    ],
     "type": "h3",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -33,10 +38,16 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Bitcoin balance:",
+        "children": Array [
+          "Bitcoin balance: ",
+          "",
+        ],
       },
       "ref": null,
-      "rendered": "Bitcoin balance:",
+      "rendered": Array [
+        "Bitcoin balance: ",
+        "",
+      ],
       "type": "h3",
     },
   ],
@@ -46,6 +57,7 @@ ShallowWrapper {
         "enableComponentDidUpdateOnSetState": true,
       },
     },
+    "disableLifecycleMethods": true,
   },
 }
 `;

@@ -9,7 +9,7 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe('Loot', () => {
   const mockFetchBitcoin = jest.fn()
-  let props = { balance: 10, bitcoin: {}, fetchBitcoin: mockFetchBitcoin };
+  let props = { balance: 10, bitcoin: {} };
   let loot = shallow(<Loot {...props} />);
 
   it('renders properly', () => {
@@ -30,12 +30,12 @@ describe('Loot', () => {
 
   describe('when there are valid bitcoin props', () => {
     beforeEach(() => {
-      props = { balance: 10, bitcoin: { bpi: {GBP: { rate: '1,000' } } } };
+      props = { balance: 10, bitcoin: { bpi: { USD: { rate: '1,000' } } } };
       loot = shallow(<Loot {...props} />)
     });
 
     it('displays the correct bitcoin value', () => {
-      expect(loot.find('h3').text()).toEqual('Bitcoin balance: 0.01');
+      expect(loot.find('h3').text()).toEqual('Bitcoin balance: 0.01')
     })
   });
 });
