@@ -22,7 +22,7 @@ export class Wallet extends Component {
         <br />
         <input className='input-wallet' onChange={this.updateBalance} />
         <button className='btn-deposit' onClick={this.deposit}>Deposit</button>
-        <button className='btn-withdraw' onClick={this.withdraw}>WITHDRAW</button>
+        <button className='btn-withdraw' onClick={this.withdraw}>Withdraw</button>
       </div>
     )
   }
