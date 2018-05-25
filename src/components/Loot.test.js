@@ -16,7 +16,7 @@ describe('Loot', () => {
   });
 
   describe('when mounted', () => {
-    const mockFetchBitcoin = jest.fn() 
+    const mockFetchBitcoin = jest.fn()
     beforeEach(() => {
       props.fetchBitcoin = mockFetchBitcoin;
       loot = mount(<Loot {...props} />)
@@ -30,7 +30,7 @@ describe('Loot', () => {
 
   describe('when there are valid bitcoin props', () => {
     beforeEach(() => {
-      props = { balance: 10, bitcoin: { bpi: { USD: { rate: '1,000' } } } };
+      props = { balance: 10, bitcoin: { bpi: { GBP: { rate: '1,000' } } } };
       loot = shallow(<Loot {...props} />)
     });
 

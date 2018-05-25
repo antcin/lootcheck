@@ -8,7 +8,7 @@ export class Loot extends Component {
   computeBitcoin() {
     const { bitcoin } = this.props
     if(Object.keys(bitcoin).length === 0) return ''
-    return this.props.balance / parseInt(bitcoin.bpi.USD.rate.replace(',', ''), 10)
+    return this.props.balance / parseInt(bitcoin.bpi.GBP.rate.replace(',', ''), 10)
   }
 
   render() {
