@@ -27,4 +27,15 @@ describe('Loot', () => {
       expect(mockFetchBitcoin).toHaveBeenCalled();
     });
   });
+
+  describe('when there are valid bitcoin props', () => {
+    beforeEach(() => {
+      props = { balance: 10, bitcoin: { bpi: {GBP: { rate: '1,000' } } } };
+      loot = shallow(<Loot {...props} />)
+    });
+
+    it('displays the correct bitcoin value', () => {
+      expect(loot.find('h3').text()).toEqual('Bitcoin balance: 0.01');
+    })
+  });
 });
