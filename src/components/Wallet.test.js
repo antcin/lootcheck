@@ -45,10 +45,10 @@ describe('Wallet', () => {
 
     describe('and the user wants to make a withdrawal', () => {
       beforeEach(() => wallet.find('.btn-withdraw').simulate('click'));
-    });
 
-    it('dispatches the `withdraw()` it receives from props with local balance', () => {
-      expect(mockWithdraw).toHaveBeenCalledWith(parseInt(userBalance, 10))
-    })
+      it('dispatches the `withdraw()` it receives from props with local balance', () => {
+        expect(mockWithdraw).toHaveBeenCalledWith(parseInt(userBalance, 10))
+      });
+    });
   });
 });
